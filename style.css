@@ -1,0 +1,325 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+html{
+    scroll-behavior: smooth ;
+}
+/* image and logo */
+#logo{
+    margin: 7px 17px;
+    padding: 8px 9px;
+}
+
+#logo img{
+    height: 85px;
+}
+
+/* navigation bar */
+#navbar{
+    display: flex;
+    align-items: center;
+    position: relative;
+
+}
+#navbar ul{
+    display: flex;
+    font-family: 'Bree Serif', serif;
+
+}
+#navbar ul li{
+    list-style: none;
+    font-size: 1.3rem;
+}
+#navbar ul li a{
+    margin: 12px;
+    padding: 9px;
+    text-decoration: none;
+    color: aliceblue;
+    border-radius: 20px;
+}
+#navbar ul li a:hover{
+    color: black;
+    background-color:azure;
+}
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    opacity: 1;
+    z-index: -1;
+    top: 0px;
+    left: 0px;
+}
+
+
+/* Home section  */
+#home{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 320px;
+    justify-content: center;
+    margin: 85px 100px;
+    padding: 25px;
+}
+#home::before{
+    content: "";
+    position: absolute;
+    background: url(./images/bg.jpg) no-repeat center center/cover;
+    height: 650px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.79;
+    top: 0px;
+    left: 0px;
+}
+#home h1{
+    color: rgba(0, 0, 0, 0.943);
+    font-size: 3.5rem;
+    margin: 25px;
+    padding: 20px;
+    font-family: 'Libre Baskerville', serif;
+    font-weight: 900;
+    text-shadow: 4px 4px 4px white  ;
+
+}
+#home p{
+    color: white;
+    font-size: 18px;
+    text-align: center;
+    font-family: 'Libre Baskerville', serif;
+    margin: 3px;
+    padding: 2px;
+}
+.btn{
+    padding: 8px;
+    margin: 9px;
+    border-radius: 7px;
+    border: 2px solid whitesmoke;
+    background-color: rgb(61, 38, 38);
+    color: aliceblue;
+    cursor: pointer;
+    font-size: 15px;
+    transition: all;
+    transition-duration: .5s;
+    transition-timing-function: ease-in-out;
+}
+.btn:hover{
+    background-color: rgb(0, 0, 0);
+    color: wheat;
+    border: 2px solid bisque;
+    border-radius: 14px;
+    box-shadow: 1px 1px 2px wheat;
+}
+
+/* Services section */
+
+#services{
+    margin: 20px;
+    display: flex;
+    text-align: center;
+    /* border: 1px solid red; */
+}
+#services .box{
+    border: 2px solid darkred;
+    margin: 8px;
+    padding: 13px;
+    background-color: rgb(0, 0, 0);
+    border-radius: 28px;
+
+}
+#services .box img{
+    height: 320px;
+    width: 250px;
+    display: block;
+    margin: auto;
+    padding: 15px 35px;
+}
+#services-container h1{
+    text-align: center;
+    font-family: 'Libre Baskerville', serif;
+    font-size: 48px;
+    margin: 10px;
+    padding: 10px;
+    text-shadow: 3px 3px 3px #898888;
+}
+.box h2{
+    font-family: 'Bree Serif', serif;
+    font-weight: 100;
+    font-size: 22px;
+    color: aliceblue;
+}
+.box p{
+    font-size: 17px;
+    color: bisque;
+}
+
+/* AboutUs section */
+.about-container{
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.about_heading{
+    margin: 10px;
+    padding: 10px;
+    font-size: 50px;
+    font-family: 'Bree Serif', serif;
+    color: rgb(255, 170, 170);
+    text-shadow: 2px 2px 2px red;
+}
+
+.about-container h2{
+    font-size: 20px;
+    padding: 12px;
+    margin: 6px;
+    font-family: 'Libre Baskerville', serif;
+    color: wheat;
+}
+.about-container p{
+    font-size: 17px;
+    color: white;
+    margin: 0px 30px;
+    text-align: center;
+}
+#about::before{
+    content: "";
+    position: absolute;
+    height: 600px;
+    width: 100%;
+    background: url(./images/aboutus1.jpg) no-repeat center center/cover;   
+    z-index: -1;
+    opacity: .85;
+    border-radius: 60px;
+}
+
+/* Client-section */
+#clients{
+    margin: 25px;
+    padding: 20px;
+    margin-top: 40px;
+}
+.client-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* border: 2px solid red; */
+    margin: 5px;
+    padding: 7px;
+    justify-content: center;
+}
+.client-section{
+    display: flex;
+    border: 2px solid black;
+    border-radius: 4px;
+    margin: 10px;
+    padding: 7px;
+    align-items: center;
+    box-shadow: 4px 4px 4px gray;
+    transition: all;
+    transition-duration: .5s;
+    transition-timing-function: ease-in-out;
+}
+.client-section:hover{
+    background-color: rgba(0, 0, 0, 0.806);
+    color: aliceblue;
+    border-radius: 20px;
+    border: 2px solid #f6d970;
+    box-shadow: 5px 5px 5px darkolivegreen;
+}
+.client-section img{
+    height: 12rem;
+    width: 12rem;
+    position: relative;
+    border-radius: 20px;
+    margin: 9px;
+    padding: 8px;
+    
+}
+
+#clients h1{
+    text-align: center;
+    font-family: 'Libre Baskerville', serif;
+    font-size: 42px;
+    margin: 20px;
+    padding: 15px;
+    margin-top: 40px;
+    font-weight: 900;
+    text-shadow: 3px 3px 3px #898888;
+}
+.client-section p{
+    font-size: 15px;
+    padding: 10px;
+    font-family: 'Bree Serif', serif;
+    
+}
+
+/* Contact us section */
+#contactus::before{
+    position: absolute;
+    content: "";
+    height: 625px;
+    width: 100%;
+    background: url(./images/contact2.jpg) no-repeat center center/cover;
+    z-index: -1;
+    opacity: .77;
+    border-radius: 20px;
+}
+.contactbox input,textarea{
+    width: 100%;
+    padding: 5px;
+    margin: 3px;
+    border-radius: 6px;
+    font-size: 14px;
+    font-family: 'Libre Baskerville', serif;
+
+}
+
+.contactbox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    padding-bottom: 30px;
+    padding-top: 10px;
+    
+}
+#contactus h1{
+    font-size: 52px;
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+    font-family: 'Bree Serif', serif;
+    text-shadow: 2px 2px 2px blanchedalmond;
+}
+
+.contactbox form{
+    width: 40%;
+    margin: 5px;
+    padding: 5px;
+    font-family: 'Bree Serif', serif;
+}
+.contactbox button{
+    width: 40%;
+    /* margin: 10px; */
+    padding: 5px;
+    position: relative;
+    margin-right: -20px;
+    
+}
+.contact1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+footer{
+    text-align: center;
+    background-color: black;
+    color: aliceblue;
+    padding: 10px;
+}
